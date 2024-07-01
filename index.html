@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Job Application Filter</h1>
+    <div class="form-container">
+        <h2>Applicant Form</h2>
+        <form id="applicantForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" name="skills" required>
+            <label for="experience">Experience (years):</label>
+            <input type="number" id="experience" name="experience" required>
+            <button type="submit">Add Applicant</button>
+        </form>
+    </div>
+    
+    <div class="form-container">
+        <h2>Job Requirement Form</h2>
+        <form id="requirementForm">
+            <label for="requiredSkills">Required Skills (comma separated):</label>
+            <input type="text" id="requiredSkills" name="requiredSkills" required>
+            <label for="minExperience">Minimum Experience (years):</label>
+            <input type="number" id="minExperience" name="minExperience" required>
+            <button type="submit">Set Requirements</button>
+        </form>
+    </div>
+ 
+    <div class="list-container">
+        <h2>Applicants</h2>
+        <ul id="applicantList"></ul>
+    </div>
+    
+    <div class="list-container">
+        <h2>Filtered Applicants</h2>
+        <ul id="filteredApplicantList"></ul>
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
